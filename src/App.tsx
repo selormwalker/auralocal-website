@@ -22,7 +22,7 @@ function App() {
             Powered by Qwen2.5 (1.5B). Experience OS control, web reading, advanced knowledge, agents, data analysis, voice, and vision—100% offline.
           </p>
           <div className="hero-buttons">
-            <a href="https://github.com/selormwalker/AuraLocal/archive/refs/heads/master.zip" className="btn btn-large">Download AuraLocal</a>
+            <a href="https://github.com/selormwalker/AuraLocal/archive/refs/heads/master.zip" className="btn btn-large">Download Setup (ZIP)</a>
             <a href="#features" className="btn btn-large btn-secondary">Explore Features</a>
           </div>
         </section>
