@@ -1,73 +1,36 @@
-# React + TypeScript + Vite
+# AuraLocal Website ✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the source code for the official landing page of **AuraLocal 2.0 Ultimate Edition**.
 
-Currently, two official plugins are available:
+## About AuraLocal
+AuraLocal is a comprehensive, high-performance local AI ecosystem powered by Qwen2.5. It features:
+- Automator (Proactive file creation)
+- System Controller (OS powers)
+- In-Chat Vision (Moondream)
+- Web Reader & Global Search
+- Productivity Suite (Tasks & Notes)
+- 100% Offline Privacy
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+The main application repository can be found here: [AuraLocal](https://github.com/selormwalker/AuraLocal)
 
-## React Compiler
+## Tech Stack
+This landing page is built for speed and simplicity:
+- **Framework:** React (TypeScript) via Vite
+- **Styling:** Custom Vanilla CSS (Dark theme with procedural gradients)
+- **Deployment:** Ready for Vercel
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Local Development
 
-## Expanding the ESLint configuration
+To run this website locally:
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Deployment
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Deploy instantly to Vercel:
+1. Connect your GitHub account to Vercel.
+2. Import this repository (`selormwalker/auralocal-website`).
+3. Click **Deploy**. Vercel will automatically configure the Vite build settings.
