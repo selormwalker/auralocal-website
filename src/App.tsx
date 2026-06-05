@@ -8,7 +8,10 @@ function App() {
       
       <div className="container">
         <nav>
-          <div className="logo">✨ AuraLocal</div>
+          <div className="logo">
+            <img src="/logo.svg" alt="AuraLocal Logo" style={{ width: '40px', height: '40px' }} />
+            AuraLocal
+          </div>
           <a href="https://github.com/selormwalker/AuraLocal" target="_blank" rel="noopener noreferrer" className="btn btn-secondary">View on GitHub</a>
         </nav>
 

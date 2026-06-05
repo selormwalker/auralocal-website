@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="auraGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9b51e0" />
+      <stop offset="100%" stop-color="#ff758c" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="15" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Background (Optional, remove if you want it transparent) -->
+  <rect width="400" height="400" fill="transparent"/>
+
+  <!-- Outer Glowing Ring -->
+  <circle cx="200" cy="200" r="140" fill="none" stroke="url(#auraGradient)" stroke-width="12" filter="url(#glow)" opacity="0.6"/>
+  
+  <!-- Middle Ring -->
+  <circle cx="200" cy="200" r="100" fill="none" stroke="url(#auraGradient)" stroke-width="20" stroke-dasharray="80 30" opacity="0.9"/>
+  
+  <!-- Inner Core -->
+  <circle cx="200" cy="200" r="50" fill="url(#auraGradient)" filter="url(#glow)"/>
+  
+  <!-- A - Letter inside -->
+  <path d="M 200 165 L 170 230 L 230 230 Z" fill="#ffffff" />
+  <path d="M 200 165 L 150 250 L 175 250 L 185 200 L 215 200 L 225 250 L 250 250 Z" fill="#ffffff" />
+</svg>
